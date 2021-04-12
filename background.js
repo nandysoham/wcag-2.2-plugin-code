@@ -1,9 +1,9 @@
 function getWH(element) { 
-    var h = parseInt($(this).parent().css('min-height'),10) 
+    var h = parseInt($(this).parent().css('min-height'),10)    //S parsing the height 10 --. numeral sysytem --> decimal
         || parseInt($(this).parent().css('height'),10);
     var w = parseInt($(this).parent().css('min-width'),10) 
         || parseInt($(this).parent().css('width'),10);
-    return h,w,$(this)    
+    return h,w,$(this)    //S returning height, width, element 
 }
 function imgCoordinates() {
   var top = []
@@ -11,8 +11,8 @@ function imgCoordinates() {
   var bottom = []
   var right = []
   $(document).ready(function(){    
-    $('img').each(function(){
-      top.push($(this).offset().top)
+    $('img').each(function(){           //S <arr_name>.forEach(()=>{})
+      top.push($(this).offset().top)   //S pushing the offset - top values to an array
       right.push($(this).offset().right)
       left.push($(this).offset().left)
       bottom.push($(this).offset().bottom)
@@ -21,7 +21,7 @@ function imgCoordinates() {
   return top,left,bottom,right
 }
 function getCoordinates(ele) {
-  // $(document).ready(function(){    
+  // $(document).ready(function(){     //S waiting for the document to load then only trying the js(anyway commented out)  
       var top = ele.offset().top
       var right = ele.offset().right
       var left = ele.offset().left
@@ -37,13 +37,15 @@ function comparePositions(t1,l1,b1,r1,t2,l2,b2,r2){
 
 }
 function luminance(r, g, b) {
+
+  //S .map() --> to return an array whose each element has gone through the function 
     var a = [r, g, b].map(function (v) {
         v /= 255;
         return v <= 0.03928
             ? v / 12.92
             : Math.pow( (v + 0.055) / 1.055, 2.4 );
     });
-    return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;
+    return a[0] * 0.2126 + a[1] * 0.7152 + a[2] * 0.0722;       //S  mathematical formula for calulating luminescense
 }
 function contrast(rgb1, rgb2) {
     var lum1 = luminance(parseInt(rgb1[0]), parseInt(rgb1[1]), parseInt(rgb1[2]));
@@ -69,6 +71,15 @@ function getBackgroundFocus() {
 }
   $(document).ready(function(){    
     $('button').each(function(){
+
+      //S This splits the css `backgroundcolor : rgb(120,120,120)'
+      //S .split(")") --> `backgroundcolor : rgb(120,120,120` , `)`
+      //S  .split(")")[0] --> `backgroundcolor : rgb(120,120,120`
+      //S  .split(")") -->  `backgroundcolor : rgb(`  ,  `120,120,120`
+      //S   .split[1] --> `120,120,120`
+      //S   .split(",")   --> [ 120 ,120 ,120]
+
+
       var background = $(this).css('backgroundColor').split(")")[0].split("(")[1].split(",")
       // console.log('background: ',background, ': ', typeof(background))
       var backgroundFocus = $(this).focus().css('backgroundColor').split(")")[0].split("(")[1].split(",")
@@ -77,11 +88,11 @@ function getBackgroundFocus() {
       if(buttonContrast >= 3){
         console.log('Focus Contrast Satisifies (WCAG 2.2)')
       } else{
-        var borderFocus = $(this).focus().css("borderWidth")
+        var borderFocus = $(this).focus().css("borderWidth")              //S TAj=kes the borderwidth
         if(borderFocus.includes("px")){
-          borderFocus = parseInt(borderFocus.split("px")[0])
+          borderFocus = parseInt(borderFocus.split("px")[0])              //S   gets the pixel values(value before the word px)
           console.log('borderFocus: ',borderFocus)
-        } else if(borderFocus.includes("rem")){
+        } else if(borderFocus.includes("rem")){                           //S  --> the sam eis done to find the existence of other parmeters
           borderFocus = parseInt(borderFocus.split("rem")[0])
           borderFocus = parseFloat((borderFocus*2.0)/0.13)
           console.log('borderFocus: ',borderFocus)
@@ -99,6 +110,7 @@ function getBackgroundFocus() {
           console.log('borderFocus: ',borderFocus)
         }
         if(borderFocus >= 2){
+          console.log( $(this).html());// added by sn
           console.log('Guideline 2.4.7 Focus Visible Success Criteria Satisfied!')
         } else{
           console.log('Violation - Guideline 2.4.7 Focus Visible. If the focus indication area is adjacent to a color with which it does not have a 3:1 contrast ratio difference, the thickness of the focus indicator is at least 2 CSS pixel')
@@ -112,14 +124,14 @@ function getBackgroundFocus() {
       var focusArea = -1
       var perimeter = 0
       if(height.includes("px") && heightFocus.includes("px") && width.includes("px") && widthFocus.includes("px")){
-        area = parseInt(height.split("px")[0])*parseInt(width.split("px")[0])
+        area = parseInt(height.split("px")[0])*parseInt(width.split("px")[0])                     //S finding the focus area ,are, perimeter
         focusArea = parseInt(heightFocus.split("px")[0])*parseInt(widthFocus.split("px")[0])
         perimeter = 2*(parseInt(height.split("px")[0])+parseInt(width.split("px")[0]))
 
       }
       if(buttonContrast >= 3){
         console.log('Focus Contrast Satisifies (WCAG 2.2)')
-      } else{
+      } else{                                                       //S if not found carry on the alternatives
         var borderFocus = $(this).focus().css("borderWidth")
         if(borderFocus.includes("px")){
           borderFocus = parseInt(borderFocus.split("px")[0])
@@ -149,10 +161,11 @@ function getBackgroundFocus() {
       }
 
       
-      var h,w,ele = getWH($(this))
+      var h,w,ele = getWH($(this))        //S function() defined on the top--> to get the height, width and the element back
       if(h >= 44 && w >= 44){
         for(var k=0;k<top.length;k++){
           var t1,l1,b1,r1 = getCoordinates($(this))
+          console.log( $(this).html());   // added by sn
           if(comparePositions(t1,l1,b1,r1,top[i],left[i],bottom[i],right[i])){
             console.log('button: Violation, button show lie along the boundaries of the image')
           } else {
@@ -161,7 +174,8 @@ function getBackgroundFocus() {
         }
       }
       else if(h == 0 || w == 0){
-        console.log('button: Violation')
+        console.log($(this).html());  
+        console.log('button: Violation')      //S --> button has bo dimensions
       }
       else {
         var depth = 3
@@ -173,6 +187,7 @@ function getBackgroundFocus() {
                 if(top.length > 0){
                   for(var k=0;k<top.length;k++){
                     var t1,l1,b1,r1 = getCoordinates($(ele))
+                    console.log( $(this).html());  
                     if(comparePositions(t1,l1,b1,r1,top[i],left[i],bottom[i],right[i])){
                       console.log('button: Violation, anchor should lie along the boundaries of the image')
                     } else {
@@ -183,11 +198,13 @@ function getBackgroundFocus() {
                   }
                 } else {
                   violation = false
+                  console.log( $(this).html);  
                   console.log('button: Pointer target spacing exists')
                 }
                 break
               }
               else if(h == 0 || w == 0){
+                console.log( $(this).html());  //by soham
                 console.log('button: Violation')
                 break
               }
@@ -203,13 +220,14 @@ function getBackgroundFocus() {
     });
 
   
-
+//S the above function is being called
   $(document).ready(function(){    
     $('a').each(function(){
       var h,w,ele = getWH($(this))
       if(h >= 44 && w >= 44){
         for(var k=0;k<top.length;k++){
           var t1,l1,b1,r1 = getCoordinates($(this))
+          console.log( $(this).html());  //by soham
           if(comparePositions(t1,l1,b1,r1,top[i],left[i],bottom[i],right[i])){
             console.log('button: Violation, button show lie along the boundaries of the image')
           } else {
@@ -218,6 +236,7 @@ function getBackgroundFocus() {
         }
       }
       else if(h == 0 || w == 0){
+        console.log($(this).html());  //by soham
         console.log('button: Violation')
       }
       else {
@@ -230,6 +249,7 @@ function getBackgroundFocus() {
                 if(top.length > 0){
                   for(var k=0;k<top.length;k++){
                     var t1,l1,b1,r1 = getCoordinates($(ele))
+                    console.log( $(this).html());  //by soham
                     if(comparePositions(t1,l1,b1,r1,top[i],left[i],bottom[i],right[i])){
                       console.log('button: Violation, anchor should lie along the boundaries of the image')
                     } else {
@@ -240,11 +260,13 @@ function getBackgroundFocus() {
                   }
                 } else {
                   violation = false
+                  console.log($(this).html());  //by soham
                   console.log('button: Pointer target spacing exists')
                 }
                 break
               }
               else if(h == 0 || w == 0){
+                console.log( $(this).html());  //by soham
                 console.log('button: Violation')
                 break
               }
@@ -259,23 +281,23 @@ function getBackgroundFocus() {
       });
     });
   
-  var script_content = document.getElementsByTagName('script')
-  var input_elements = document.getElementsByTagName('input')
+  var script_content = document.getElementsByTagName('script')          //S finds the script tag
+  var input_elements = document.getElementsByTagName('input')           //S finds the input tags
 
   console.log(input_elements.length >= 0 && script_content.length >= 0)
-  if(input_elements.length >= 0 && script_content.length >= 0){
+  if(input_elements.length >= 0 && script_content.length >= 0){         // checking whether the scripts and inputs are well filled
   var RedundantContentAvailability = false
   for(var i=0;i<script_content.length;i++)
   {
       for(var j=0;j<input_elements.length;j++){
-        var str1 = input_elements[j].name
+        var str1 = input_elements[j].name                 //S choosing the names and ids of the input elemnts in the form
         var str2 = input_elements[j].id
-        var st1 = "document.getElementById('"+ str1 +"').innerHTML"
+        var st1 = "document.getElementById('"+ str1 +"').innerHTML"       //S puttng the queries as a string
         var st2 = "document.getElementById('"+ str1 +"').innerText"
         var st3 = "document.getElementsByName('"+ str2 +"').innerHTML"
         var st4 = "document.getElementsByName('"+ str2 +"').innerText"
         // var st5 = `$('#`+ str1 + `').text(`
-        if(script_content[i].innerHTML.includes(st1) ||
+        if(script_content[i].innerHTML.includes(st1) ||                     //S --> will check if st1, st2,st3.st4 are substrings of the string returned by getELmentById
            script_content[i].innerHTML.includes(st2) ||
            script_content[i].innerHTML.includes(st3) ||
            script_content[i].innerHTML.includes(st4)){
@@ -284,6 +306,12 @@ function getBackgroundFocus() {
            }
       }       
   }
+
+
+//S --> To say 1 or more redundant fields exist in the forms
+
+
+
   // if(RedundantContentAvailability == false){
   //   console.log('------------------------------------------')
   //   console.log('3.3.8 Redundant Entry violation')
@@ -300,36 +328,47 @@ function getBackgroundFocus() {
 //  1) support for password entry by password managers to address the memorization cognitive function test, and
 //  2) copy and paste to help address transcription cognitive function test.
 
-  
-  var input_elements = document.getElementsByTagName('input')
+ 
+
+
+
+//S AUTOCOMPLETE FEATURE LOADEING-->
+  var input_elements = document.getElementsByTagName('input')     //S Multiple elements would be present
+  // console.log(input_elements[0]);
   for(var i=0;i<input_elements.length;i++){
-    if(input_elements[i].type != "submit" && input_elements[i].type != "password" && input_elements[i].type != "file"){
+    if(input_elements[i].type != "submit" && input_elements[i].type != "password" && input_elements[i].type != "file"){     //S if not password and not file
       if(input_elements[i].name != input_elements[i].id){
         console.log('------------------------------------------')
         console.log('Guideline 3.3.7 Accessible Authentication violation')
         console.log('Input tag`s name and id should be same!')
+        console.log(input_elements[i])  //by soham
         console.log('------------------------------------------')
+        
       }
       else{
         if(input_elements[i].type == "text" && input_elements[i].name == "email"){
             console.log('------------------------------------------')
             console.log('Guideline 3.3.7 Accessible Authentication violation')
             console.log('Input tag should be of email type found text type!')
+            console.log("for "+ input_elements[i]);  //by soham
             console.log('------------------------------------------')
+            
         }
         if(input_elements[i].type == "email"){
-          if(input_elements[i].autocomplete != "email"){
+          if(input_elements[i].autocomplete != "email"){              // jquery to check autocomplete faetire of input element
             console.log('------------------------------------------')
             console.log('Guideline 3.3.7 Accessible Authentication violation')
             console.log('Input tag should have autocomplete feature enabled!')
+            console.log("for "+ input_elements[i]);  //by soham
             console.log('------------------------------------------')
           }
         }
         if(input_elements[i].type == "date"){
-          if(input_elements[i].autocomplete == undefined){
+          if(input_elements[i].autocomplete == undefined){              // Jquery provides an inbuilt autocomplete feature
             console.log('------------------------------------------')
             console.log('Guideline 3.3.7 Accessible Authentication violation')
             console.log('Input tag should have autocomplete feature enabled!')
+            console.log("for "+ input_elements[i]);  //by soham
             console.log('------------------------------------------')
           }
           else{
@@ -342,6 +381,11 @@ function getBackgroundFocus() {
       }
     }
   }
+
+
+  //s same part --> continuatin of automated.js -->
+
+
   var a_elements = document.getElementsByTagName("a")
   for(var i=0;i<a_elements.length;i++){
     if(a_elements[i].draggable == "true"){

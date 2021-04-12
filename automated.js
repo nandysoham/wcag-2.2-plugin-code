@@ -3,6 +3,9 @@ for(var i=0;i<a_elements.length;i++){
   if(a_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(a_elements[i])
+    console.log('------------------------------------------')
     console.log("a element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -13,6 +16,9 @@ for(var i=0;i<abbr_elements.length;i++){
   if(abbr_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(abbr_elements[i])
+    console.log('------------------------------------------')
     console.log("abbr element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -23,6 +29,9 @@ for(var i=0;i<address_elements.length;i++){
   if(address_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(address_elements[i])
+    console.log('------------------------------------------')
     console.log("address element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -33,6 +42,9 @@ for(var i=0;i<area_elements.length;i++){
   if(area_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(area_elements[i])
+    console.log('------------------------------------------')
     console.log("area element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -43,6 +55,9 @@ for(var i=0;i<article_elements.length;i++){
   if(article_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(article_elements[i])
+    console.log('------------------------------------------')
     console.log("article element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -53,6 +68,9 @@ for(var i=0;i<aside_elements.length;i++){
   if(aside_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(aside_elements[i])
+    console.log('------------------------------------------')
     console.log("aside element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -63,6 +81,9 @@ for(var i=0;i<audio_elements.length;i++){
   if(audio_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(audio_elements[i])
+    console.log('------------------------------------------')
     console.log("audio element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -73,6 +94,9 @@ for(var i=0;i<base_elements.length;i++){
   if(base_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(base_elements[i])
+    console.log('------------------------------------------')
     console.log("base element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -83,6 +107,9 @@ for(var i=0;i<bdi_elements.length;i++){
   if(bdi_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(bdi_elements[i])
+    console.log('------------------------------------------')
     console.log("bdi element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -93,6 +120,9 @@ for(var i=0;i<bdo_elements.length;i++){
   if(bdo_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(bdo_elements[i])
+    console.log('------------------------------------------')
     console.log("bdo element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -103,6 +133,9 @@ for(var i=0;i<blockquote_elements.length;i++){
   if(blockquote_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(blockquote_elements[i])
+    console.log('------------------------------------------')
     console.log("blockquote element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -113,6 +146,9 @@ for(var i=0;i<button_elements.length;i++){
   if(button_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(button_elements[i])
+    console.log('------------------------------------------')
     console.log("button element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -123,6 +159,9 @@ for(var i=0;i<canvas_elements.length;i++){
   if(canvas_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(canvas_elements[i])
+    console.log('------------------------------------------')
     console.log("canvas element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -133,6 +172,9 @@ for(var i=0;i<body_elements.length;i++){
   if(body_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(body_elements[i])
+    console.log('------------------------------------------')
     console.log("body element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -143,6 +185,9 @@ for(var i=0;i<caption_elements.length;i++){
   if(caption_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(caption_elements[i])
+    console.log('------------------------------------------')
     console.log("caption element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -153,6 +198,9 @@ for(var i=0;i<cite_elements.length;i++){
   if(cite_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(cite_elements[i])
+    console.log('------------------------------------------')
     console.log("cite element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -163,6 +211,9 @@ for(var i=0;i<code_elements.length;i++){
   if(code_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(code_elements[i])
+    console.log('------------------------------------------')
     console.log("code element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -173,6 +224,9 @@ for(var i=0;i<col_elements.length;i++){
   if(col_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(col_elements[i])
+    console.log('------------------------------------------')
     console.log("col element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -183,6 +237,9 @@ for(var i=0;i<colgroup_elements.length;i++){
   if(colgroup_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(colgroup_elements[i])
+    console.log('------------------------------------------')
     console.log("colgroup element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -193,6 +250,9 @@ for(var i=0;i<data_elements.length;i++){
   if(data_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(data_elements[i])
+    console.log('------------------------------------------')
     console.log("data element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -203,6 +263,9 @@ for(var i=0;i<datalist_elements.length;i++){
   if(datalist_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(datalist_elements[i])
+    console.log('------------------------------------------')
     console.log("datalist element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -213,6 +276,9 @@ for(var i=0;i<dd_elements.length;i++){
   if(dd_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(dd_elements[i])
+    console.log('------------------------------------------')
     console.log("dd element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -223,6 +289,9 @@ for(var i=0;i<del_elements.length;i++){
   if(del_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(del_elements[i])
+    console.log('------------------------------------------')
     console.log("del element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -233,6 +302,9 @@ for(var i=0;i<details_elements.length;i++){
   if(details_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(details_elements[i])
+    console.log('------------------------------------------')
     console.log("details element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -243,6 +315,9 @@ for(var i=0;i<dfn_elements.length;i++){
   if(dfn_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(dfn_elements[i])
+    console.log('------------------------------------------')
     console.log("dfn element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -253,6 +328,9 @@ for(var i=0;i<dialog_elements.length;i++){
   if(dialog_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(dialog_elements[i])
+    console.log('------------------------------------------')
     console.log("dialog element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -263,6 +341,9 @@ for(var i=0;i<div_elements.length;i++){
   if(div_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(div_elements[i])
+    console.log('------------------------------------------')
     console.log("div element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -273,6 +354,9 @@ for(var i=0;i<dl_elements.length;i++){
   if(dl_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(dl_elements[i])
+    console.log('------------------------------------------')
     console.log("dl element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -283,6 +367,9 @@ for(var i=0;i<dt_elements.length;i++){
   if(dt_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(dt_elements[i])
+    console.log('------------------------------------------')
     console.log("dt element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -293,6 +380,9 @@ for(var i=0;i<em_elements.length;i++){
   if(em_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(em_elements[i])
+    console.log('------------------------------------------')
     console.log("em element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -303,6 +393,9 @@ for(var i=0;i<embed_elements.length;i++){
   if(embed_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(embed_elements[i])
+    console.log('------------------------------------------')
     console.log("embed element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -313,6 +406,9 @@ for(var i=0;i<fieldset_elements.length;i++){
   if(fieldset_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(fieldset_elements[i])
+    console.log('------------------------------------------')
     console.log("fieldset element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -323,6 +419,9 @@ for(var i=0;i<figcaption_elements.length;i++){
   if(figcaption_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(figcaption_elements[i])
+    console.log('------------------------------------------')
     console.log("figcaption element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -333,6 +432,9 @@ for(var i=0;i<figure_elements.length;i++){
   if(figure_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(figure_elements[i])
+    console.log('------------------------------------------')
     console.log("figure element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -343,6 +445,9 @@ for(var i=0;i<footer_elements.length;i++){
   if(footer_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(footer_elements[i])
+    console.log('------------------------------------------')
     console.log("footer element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -353,6 +458,9 @@ for(var i=0;i<form_elements.length;i++){
   if(form_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(form_elements[i])
+    console.log('------------------------------------------')
     console.log("form element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -363,6 +471,9 @@ for(var i=0;i<h1_elements.length;i++){
   if(h1_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(h1_elements[i])
+    console.log('------------------------------------------')
     console.log("h1 element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -373,6 +484,9 @@ for(var i=0;i<h2_elements.length;i++){
   if(h2_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(h2_elements[i])
+    console.log('------------------------------------------')
     console.log("h2 element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -383,6 +497,9 @@ for(var i=0;i<h3_elements.length;i++){
   if(h3_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(h3_elements[i])
+    console.log('------------------------------------------')
     console.log("h3 element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -393,6 +510,9 @@ for(var i=0;i<h4_elements.length;i++){
   if(h4_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(h4_elements[i])
+    console.log('------------------------------------------')
     console.log("h4 element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -403,6 +523,9 @@ for(var i=0;i<h5_elements.length;i++){
   if(h5_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(h5_elements[i])
+    console.log('------------------------------------------')
     console.log("h5 element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -413,6 +536,9 @@ for(var i=0;i<h6_elements.length;i++){
   if(h6_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(h6_elements[i])
+    console.log('------------------------------------------')
     console.log("h6 element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -423,6 +549,9 @@ for(var i=0;i<head_elements.length;i++){
   if(head_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(head_elements[i])
+    console.log('------------------------------------------')
     console.log("head element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -433,6 +562,9 @@ for(var i=0;i<header_elements.length;i++){
   if(header_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(header_elements[i])
+    console.log('------------------------------------------')
     console.log("header element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -443,6 +575,9 @@ for(var i=0;i<hr_elements.length;i++){
   if(hr_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(hr_elements[i])
+    console.log('------------------------------------------')
     console.log("hr element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -453,6 +588,9 @@ for(var i=0;i<html_elements.length;i++){
   if(html_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(html_elements[i])
+    console.log('------------------------------------------')
     console.log("html element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -463,6 +601,9 @@ for(var i=0;i<i_elements.length;i++){
   if(i_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(i_elements[i])
+    console.log('------------------------------------------')
     console.log("i element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -473,6 +614,9 @@ for(var i=0;i<iframe_elements.length;i++){
   if(iframe_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(iframe_elements[i])
+    console.log('------------------------------------------')
     console.log("iframe element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -483,6 +627,9 @@ for(var i=0;i<img_elements.length;i++){
   if(img_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(img_elements[i])
+    console.log('------------------------------------------')
     console.log("img element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -493,6 +640,9 @@ for(var i=0;i<input_elements.length;i++){
   if(input_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(input_elements[i])
+    console.log('------------------------------------------')
     console.log("input element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -503,6 +653,9 @@ for(var i=0;i<ins_elements.length;i++){
   if(ins_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(ins_elements[i])
+    console.log('------------------------------------------')
     console.log("ins element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -513,6 +666,9 @@ for(var i=0;i<kbd_elements.length;i++){
   if(kbd_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(kbd_elements[i])
+    console.log('------------------------------------------')
     console.log("kbd element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -523,6 +679,9 @@ for(var i=0;i<label_elements.length;i++){
   if(label_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(label_elements[i])
+    console.log('------------------------------------------')
     console.log("label element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -533,6 +692,9 @@ for(var i=0;i<legend_elements.length;i++){
   if(legend_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(legend_elements[i])
+    console.log('------------------------------------------')
     console.log("legend element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -543,6 +705,9 @@ for(var i=0;i<li_elements.length;i++){
   if(li_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(li_elements[i])
+    console.log('------------------------------------------')
     console.log("li element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -553,6 +718,9 @@ for(var i=0;i<link_elements.length;i++){
   if(link_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(link_elements[i])
+    console.log('------------------------------------------')
     console.log("link element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -563,6 +731,9 @@ for(var i=0;i<main_elements.length;i++){
   if(main_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(main_elements[i])
+    console.log('------------------------------------------')
     console.log("main element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -573,6 +744,9 @@ for(var i=0;i<map_elements.length;i++){
   if(map_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(map_elements[i])
+    console.log('------------------------------------------')
     console.log("map element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -583,6 +757,9 @@ for(var i=0;i<mark_elements.length;i++){
   if(mark_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(mark_elements[i])
+    console.log('------------------------------------------')
     console.log("mark element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -593,6 +770,9 @@ for(var i=0;i<meta_elements.length;i++){
   if(meta_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(meta_elements[i])
+    console.log('------------------------------------------')
     console.log("meta element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -603,6 +783,9 @@ for(var i=0;i<meter_elements.length;i++){
   if(meter_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(meter_elements[i])
+    console.log('------------------------------------------')
     console.log("meter element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -613,6 +796,9 @@ for(var i=0;i<nav_elements.length;i++){
   if(nav_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(nav_elements[i])
+    console.log('------------------------------------------')
     console.log("nav element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -623,6 +809,9 @@ for(var i=0;i<noscript_elements.length;i++){
   if(noscript_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(noscript_elements[i])
+    console.log('------------------------------------------')
     console.log("noscript element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -633,6 +822,9 @@ for(var i=0;i<object_elements.length;i++){
   if(object_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(object_elements[i])
+    console.log('------------------------------------------')
     console.log("object element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -643,6 +835,9 @@ for(var i=0;i<ol_elements.length;i++){
   if(ol_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(ol_elements[i])
+    console.log('------------------------------------------')
     console.log("ol element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -653,6 +848,9 @@ for(var i=0;i<optgroup_elements.length;i++){
   if(optgroup_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(optgroup_elements[i])
+    console.log('------------------------------------------')
     console.log("optgroup element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -663,6 +861,9 @@ for(var i=0;i<option_elements.length;i++){
   if(option_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(option_elements[i])
+    console.log('------------------------------------------')
     console.log("option element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -673,6 +874,9 @@ for(var i=0;i<output_elements.length;i++){
   if(output_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(output_elements[i])
+    console.log('------------------------------------------')
     console.log("output element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -683,6 +887,9 @@ for(var i=0;i<p_elements.length;i++){
   if(p_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(p_elements[i])
+    console.log('------------------------------------------')
     console.log("p element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -693,6 +900,9 @@ for(var i=0;i<param_elements.length;i++){
   if(param_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(param_elements[i])
+    console.log('------------------------------------------')
     console.log("param element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -703,6 +913,9 @@ for(var i=0;i<picture_elements.length;i++){
   if(picture_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(picture_elements[i])
+    console.log('------------------------------------------')
     console.log("picture element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -713,6 +926,9 @@ for(var i=0;i<pre_elements.length;i++){
   if(pre_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(pre_elements[i])
+    console.log('------------------------------------------')
     console.log("pre element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -723,6 +939,9 @@ for(var i=0;i<progress_elements.length;i++){
   if(progress_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(progress_elements[i])
+    console.log('------------------------------------------')
     console.log("progress element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -733,6 +952,9 @@ for(var i=0;i<q_elements.length;i++){
   if(q_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(q_elements[i])
+    console.log('------------------------------------------')
     console.log("q element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -743,6 +965,9 @@ for(var i=0;i<rp_elements.length;i++){
   if(rp_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(rp_elements[i])
+    console.log('------------------------------------------')
     console.log("rp element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -753,6 +978,9 @@ for(var i=0;i<rt_elements.length;i++){
   if(rt_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(rt_elements[i])
+    console.log('------------------------------------------')
     console.log("rt element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -763,6 +991,9 @@ for(var i=0;i<ruby_elements.length;i++){
   if(ruby_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(ruby_elements[i])
+    console.log('------------------------------------------')
     console.log("ruby element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -773,6 +1004,9 @@ for(var i=0;i<s_elements.length;i++){
   if(s_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(s_elements[i])
+    console.log('------------------------------------------')
     console.log("s element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -783,6 +1017,9 @@ for(var i=0;i<samp_elements.length;i++){
   if(samp_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(samp_elements[i])
+    console.log('------------------------------------------')
     console.log("samp element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -793,6 +1030,9 @@ for(var i=0;i<section_elements.length;i++){
   if(section_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(section_elements[i])
+    console.log('------------------------------------------')
     console.log("section element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -803,6 +1043,9 @@ for(var i=0;i<select_elements.length;i++){
   if(select_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(select_elements[i])
+    console.log('------------------------------------------')
     console.log("select element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -813,6 +1056,9 @@ for(var i=0;i<small_elements.length;i++){
   if(small_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(small_elements[i])
+    console.log('------------------------------------------')
     console.log("small element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -823,6 +1069,9 @@ for(var i=0;i<source_elements.length;i++){
   if(source_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(source_elements[i])
+    console.log('------------------------------------------')
     console.log("source element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -833,6 +1082,9 @@ for(var i=0;i<span_elements.length;i++){
   if(span_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(span_elements[i])
+    console.log('------------------------------------------')
     console.log("span element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -843,6 +1095,9 @@ for(var i=0;i<strong_elements.length;i++){
   if(strong_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(strong_elements[i])
+    console.log('------------------------------------------')
     console.log("strong element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -853,6 +1108,9 @@ for(var i=0;i<sub_elements.length;i++){
   if(sub_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(sub_elements[i])
+    console.log('------------------------------------------')
     console.log("sub element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -863,6 +1121,9 @@ for(var i=0;i<summary_elements.length;i++){
   if(summary_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(summary_elements[i])
+    console.log('------------------------------------------')
     console.log("summary element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -873,6 +1134,9 @@ for(var i=0;i<sup_elements.length;i++){
   if(sup_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(sup_elements[i])
+    console.log('------------------------------------------')
     console.log("sup element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -883,6 +1147,9 @@ for(var i=0;i<svg_elements.length;i++){
   if(svg_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(svg_elements[i])
+    console.log('------------------------------------------')
     console.log("svg element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -893,6 +1160,9 @@ for(var i=0;i<table_elements.length;i++){
   if(table_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(table_elements[i])
+    console.log('------------------------------------------')
     console.log("table element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -903,6 +1173,9 @@ for(var i=0;i<tbody_elements.length;i++){
   if(tbody_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(tbody_elements[i])
+    console.log('------------------------------------------')
     console.log("tbody element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -913,6 +1186,9 @@ for(var i=0;i<td_elements.length;i++){
   if(td_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(td_elements[i])
+    console.log('------------------------------------------')
     console.log("td element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -923,6 +1199,9 @@ for(var i=0;i<template_elements.length;i++){
   if(template_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(template_elements[i])
+    console.log('------------------------------------------')
     console.log("template element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -933,6 +1212,9 @@ for(var i=0;i<textarea_elements.length;i++){
   if(textarea_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(textarea_elements[i])
+    console.log('------------------------------------------')
     console.log("textarea element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -943,6 +1225,9 @@ for(var i=0;i<tfoot_elements.length;i++){
   if(tfoot_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(tfoot_elements[i])
+    console.log('------------------------------------------')
     console.log("tfoot element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -953,6 +1238,9 @@ for(var i=0;i<th_elements.length;i++){
   if(th_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(th_elements[i])
+    console.log('------------------------------------------')
     console.log("th element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -963,6 +1251,9 @@ for(var i=0;i<thead_elements.length;i++){
   if(thead_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(thead_elements[i])
+    console.log('------------------------------------------')
     console.log("thead element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -973,6 +1264,9 @@ for(var i=0;i<time_elements.length;i++){
   if(time_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(time_elements[i])
+    console.log('------------------------------------------')
     console.log("time element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -983,6 +1277,9 @@ for(var i=0;i<title_elements.length;i++){
   if(title_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(title_elements[i])
+    console.log('------------------------------------------')
     console.log("title element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -993,6 +1290,9 @@ for(var i=0;i<tr_elements.length;i++){
   if(tr_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(tr_elements[i])
+    console.log('------------------------------------------')
     console.log("tr element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -1003,6 +1303,9 @@ for(var i=0;i<track_elements.length;i++){
   if(track_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(track_elements[i])
+    console.log('------------------------------------------')
     console.log("track element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -1013,6 +1316,9 @@ for(var i=0;i<u_elements.length;i++){
   if(u_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(u_elements[i])
+    console.log('------------------------------------------')
     console.log("u element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -1023,6 +1329,9 @@ for(var i=0;i<ul_elements.length;i++){
   if(ul_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(ul_elements[i])
+    console.log('------------------------------------------')
     console.log("ul element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -1033,6 +1342,9 @@ for(var i=0;i<var_elements.length;i++){
   if(var_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(var_elements[i])
+    console.log('------------------------------------------')
     console.log("var element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -1043,6 +1355,9 @@ for(var i=0;i<video_elements.length;i++){
   if(video_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(video_elements[i])
+    console.log('------------------------------------------')
     console.log("video element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
@@ -1053,6 +1368,9 @@ for(var i=0;i<wbr_elements.length;i++){
   if(wbr_elements[i].draggable == "true"){
     console.log('------------------------------------------')
     console.log('Guideline 2.5.7 Dragging violation')
+    console.log("INNERHTML")
+    console.log(wbr_elements[i])
+    console.log('------------------------------------------')
     console.log("wbr element should have single pointer mode of operation!")
     console.log('------------------------------------------')
   }
