@@ -21,7 +21,7 @@
     "permissions": ["alarms", "webRequest", "webRequestBlocking", "activeTab", "tabs","https://services.iittp.ac.in/gitq"],
     "content_scripts":[{
         "matches" : ["https://*/*"],
-        "js":["jquery-3.6.0.js","background.js"],
+        "js":["jquery-3.6.0.js","background.js","background2.1.js"],
         "all_frames":true
     }],
     
