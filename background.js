@@ -105,7 +105,7 @@ function main() {
 
 
 
-  $(document).ready(function () {
+  $(function () {
 
     $('button').each(function () {
 
@@ -258,7 +258,7 @@ function main() {
 
 
   //S the above function is being called
-  $(document).ready(function () {
+  $(function () {
     $('a').each(function () {
       var h, w, ele = getWH($(this))
       if (h >= 44 && w >= 44) {
