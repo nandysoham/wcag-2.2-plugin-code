@@ -1,27 +1,13 @@
 {
-    "name": "gitq",
-    "version": "1.0",
-    "description":"Visual Q's for repositories on Github",
+    "name": "WCAG2.2",
+    "version": "3.0",
+    "description":"Web Accessibility Guidelines",
     "minimum_chrome_version": "46",
-    "browser_action":{
-        "default_icon":{
-            "16":"gitq-logo.png",
-            "32":"gitq-logo.png",
-            "48":"gitq-logo.png",
-            "128":"gitq-logo.png"
-        },
-        "icons":{
-            "16":"gitq-logo.png",
-            "32":"gitq-logo.png",
-            "48":"gitq-logo.png",
-            "128":"gitq-logo.png"
-        }
-    },
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "permissions": ["alarms", "webRequest", "webRequestBlocking", "activeTab", "tabs","https://services.iittp.ac.in/gitq"],
     "content_scripts":[{
         "matches" : ["https://*/*"],
-        "js":["jquery-3.6.0.js","background.js"],
+        "js":["jquery-3.6.0.js","AccessibleAuthentication.js","RedundantEntry.js","Dragging.js","FindableHelp.js","HiddenControls.js","FocusAppearanceMinimum.js","FocusAppearanceEnhanced.js","FixedReferencePoints.js","PointerTargetSpacing.js"],
         "all_frames":true
     }],
     
