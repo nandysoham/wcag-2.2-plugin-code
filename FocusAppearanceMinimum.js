@@ -14,11 +14,11 @@ function FocusAppearanceMinimum() {
             var outW2 = $(this).focus().css("outlineWidth")
             outW2 = parseInt(outW1.toString().split("px")[0])
             
-            var offsetArea = element.offsetWidth * element.offsetHeight 
-            var clientArea = element.clientHeight * element.clientWidth 
+            var offsetArea = this.offsetWidth * this.offsetHeight 
+            var clientArea = this.clientHeight * this.clientWidth 
             // var FocusArea = offsetArea - clientArea 
-            var clientPerimeter = 2 * (element.clientHeight + element.clientWidth)
-            var offsetPerimeter = 2 * (element.offsetWidth + element.offsetHeight)
+            var clientPerimeter = 2 * (this.clientHeight + this.clientWidth)
+            var offsetPerimeter = 2 * (this.offsetWidth + this.offsetHeight)
             // console.log(offsetArea, clientArea)
             // console.log("focus area: ",FocusArea)
             
@@ -49,12 +49,12 @@ function FocusAppearanceMinimum() {
                     if(outW2 < 2){
                         console.log("Violation 2.4.11! outline should be no thinner than 2 pixels")
                     } else {
-                        if(element.clientWidth < element.clientHeight){
-                            if(outW2*offsetPerimeter < (4*element.clientWidth)){
+                        if(this.clientWidth < this.clientHeight){
+                            if(outW2*offsetPerimeter < (4*this.clientWidth)){
                                 console.log("Violation 2.4.11! Focus area is alteast the area of a 4 CSS pixel thick line along the shortest side of a minimum bounding box of the unfocused component")
                             }
                         } else {
-                            if(outW2*offsetPerimeter < (4*element.clientHeight)){
+                            if(outW2*offsetPerimeter < (4*this.clientHeight)){
                                 console.log("Violation 2.4.11! Focus area is alteast the area of a 4 CSS pixel thick line along the shortest side of a minimum bounding box of the unfocused component")
                             }
                         }

@@ -14,8 +14,8 @@ function FocusAppearanceEnhanced() {
             var outW2 = $(this).focus().css("outlineWidth")
             outW2 = parseInt(outW1.toString().split("px")[0])
             
-            var clientPerimeter = 2 * 2 * (element.clientHeight + element.clientWidth)
-            var offsetPerimeter = 2 * (element.offsetWidth + element.offsetHeight)
+            var clientPerimeter = 2 * 2 * (this.clientHeight + this.clientWidth)
+            var offsetPerimeter = 2 * (this.offsetWidth + this.offsetHeight)
             offsetPerimeter = offsetPerimeter*outW2
             
             // console.log("perimeter: ",clientPerimeter)
