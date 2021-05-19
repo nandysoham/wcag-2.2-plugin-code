@@ -7,8 +7,12 @@ setTimeout(() => {
 }, 400);
 
 function FocusAppearanceEnhanced() {
-    $(document).ready(function(){    
+    var warnings = [];
+    $(document).ready(function(){
+
         $('*').each(function(){
+            var htmlelement = $(this).prop("innerHTML")
+            // console.log(htmlelement);
             var outW1 = $(this).css("outlineWidth")
             outW1 = parseInt(outW1.toString().split("px")[0])
             var outW2 = $(this).focus().css("outlineWidth")
@@ -35,13 +39,25 @@ function FocusAppearanceEnhanced() {
             }
             // console.log('contrastGained: ',contrastGained)
             if(contrastGained < 4.5){
-                console.log("Violation 2.4.12! Need contrast ratio of atleast 4.5:1 between colors in focused and unfocused states")
+                // console.log("Violation 2.4.12! Need contrast ratio of atleast 4.5:1 between colors in focused and unfocused states")
+                warnings.push({
+                    rule: 'WCAG 2.4.12',
+                    warning : 'Need contrast ratio of atleast 4.5:1 between colors in focused and unfocused states',
+                    code : htmlelement
+                });
             } 
             if(offsetPerimeter < clientPerimeter){
-                console.log("Violation 2.4.12! The focus indication area should be greater than or equal to a 2 CSS pixel solid border around the control.")                    
+                // console.log("Violation 2.4.12! The focus indication area should be greater than or equal to a 2 CSS pixel solid border around the control.")                    
+                warnings.push({
+                    rule: 'WCAG 2.4.12',
+                    warning : 'The focus indication area should be greater than or equal to a 2 CSS pixel solid border around the control.',
+                    code : htmlelement
+                });
             } 
             
         })
+        var focusenh = JSON.stringify(warnings);
+        localStorage.setItem("focusenh", focusenh);
     })
  
     

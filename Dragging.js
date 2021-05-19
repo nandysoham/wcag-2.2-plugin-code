@@ -3,10 +3,13 @@
 // by a keyboard or mouse click
 
 setTimeout(() => {
-    Dragging()
+    var warnings= Dragging();
+    // console.log(warnings);
+    localStorage.setItem("draggable",warnings);
 }, 400);
 
 function Dragging() {
+    var warnings = [];
     var allTags = document.querySelectorAll('*')
     // console.table(allTags)
     // draggable : true false
@@ -22,8 +25,13 @@ function Dragging() {
         var element = allTags[d]
         if(element.draggable == true){
             if(element.oncontextmenu == null || element.onfocus == null){
-                console.log("Violation 2.5.7! Dragabble elements(true) should have other non-pointer options")
-                console.log(element.outerHTML)
+                // console.log("Violation 2.5.7! Dragabble elements(true) should have other non-pointer options")
+                // console.log(element.outerHTML)
+                warnings.push({
+                    rule: 'WCAG 2.5.7',
+                    warning : ' Dragabble elements(true) should have other non-pointer options',
+                    code : element.outerHTML
+                });
             }
         } else {
             if( element.ondrag != null || element.onpointercancel != null || element.onpointerdown != null || 
@@ -36,12 +44,20 @@ function Dragging() {
                 element.onmouseleave != null || element.onenter != null || element.onmousewheel != null)
                 {
                     if(element.oncontextmenu == null || element.onfocus == null){
-                        console.log("Violation 2.5.7! Dragabble elements should have other non-pointer options")
-                        console.log(element.outerHTML)
+                        // console.log("Violation 2.5.7! Dragabble elements should have other non-pointer options")
+                        // console.log(element.outerHTML)
+                        warnings.push({
+                            rule: 'WCAG 2.5.7',
+                            warning : 'Dragabble elements should have other non-pointer options',
+                            code : element.outerHTML
+                        });
                     }
                 } 
         }
     }
+    // console.log("the warning list");
     
+
+    return JSON.stringify(warnings);
 }
 
