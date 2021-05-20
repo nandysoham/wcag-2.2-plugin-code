@@ -1,4 +1,8 @@
+/*
+This part needs to be checked on some other websites for better clarity
 
+js for ads messup the whole process
+*/
 
 // Help Options should reside on the same place in all the pages of a website 
 
@@ -11,7 +15,9 @@ function FocusAppearanceEnhanced() {
     $(document).ready(function(){
 
         $('*').each(function(){
-            var htmlelement = $(this).prop("innerHTML")
+            var htmlelement = $(this).prop("outerHTML")
+
+
             // console.log(htmlelement);
             var outW1 = $(this).css("outlineWidth")
             outW1 = parseInt(outW1.toString().split("px")[0])
@@ -38,6 +44,31 @@ function FocusAppearanceEnhanced() {
                 contrastGained = contrast2
             }
             // console.log('contrastGained: ',contrastGained)
+
+            console.log("this is the html element for focus enhanced");
+            // console.log(htmlelement);
+
+            var str = htmlelement.toString()
+            if(str.includes("style")){
+                var styleidx = str.indexOf("style");
+                // console.log("the index is "+styleidx);
+                var stylefirst = str.slice(styleidx);
+
+                var stylesecond = str.slice(stylefirst + 5);
+                var idx1 = stylesecond.indexOf("\"")
+                var firstpart = stylesecond.slice(idx1+1)
+                var idx2 = firstpart.indexOf("\"")
+                var secondpart = firstpart.slice(idx2+1)
+                var fix1 = stylefirst + " style = \" {please_change_the_style_for_contrast_to_pass}\" " + secondpart;
+                // console.log(fix1)
+            }
+            else{
+                var index = str.indexOf('>');
+                var elementarr = [str.slice(0, index), str.slice(index + 1)];
+                var fix1 = elementarr[0] + " style = \" {please_change_the_style_for_contrast_to_pass}\" " +">"+ elementarr[1]
+                // console.log("fix at else case " + fix1);
+            }
+
             if(contrastGained < 4.5){
                 // console.log("Violation 2.4.12! Need contrast ratio of atleast 4.5:1 between colors in focused and unfocused states")
                 warnings.push({
@@ -51,7 +82,8 @@ function FocusAppearanceEnhanced() {
                 warnings.push({
                     rule: 'WCAG 2.4.12',
                     warning : 'The focus indication area should be greater than or equal to a 2 CSS pixel solid border around the control.',
-                    code : htmlelement
+                    code : htmlelement.toString(),
+                    fix : fix1
                 });
             } 
             

@@ -20,17 +20,28 @@ function Dragging() {
     // onmouseup, onmouseover, onmousedown, onmousemove, onmouseleave, onmouseenter, onmousewheel
     // onpointercancel, onpointerdown, onpointerenter, onpointerleave, onpointermove, onpointerout, 
     // onpointerover, onpointerup
-    console.log("total elements: ",allTags.length)
+    // console.log("total elements: ",allTags.length)
     for(var d=0;d<allTags.length;d++){
         var element = allTags[d]
         if(element.draggable == true){
             if(element.oncontextmenu == null || element.onfocus == null){
                 // console.log("Violation 2.5.7! Dragabble elements(true) should have other non-pointer options")
                 // console.log(element.outerHTML)
+                var fixedcodes =[];
+                var str=element.outerHTML.toString();
+                var index = str.indexOf('>');
+                var elementarr = [str.slice(0, index), str.slice(index + 1)];
+                var fix1 = elementarr[0] + " oncontextmenu = some_function " +">"+ elementarr[1]
+                var fix2 = elementarr[0] + " onfocus = some_function " +">"+ elementarr[1]
+                fixedcodes.push(fix1,fix2)
+                
+                
+                // console.log(element.outerHTML);
                 warnings.push({
                     rule: 'WCAG 2.5.7',
                     warning : ' Dragabble elements(true) should have other non-pointer options',
-                    code : element.outerHTML
+                    code : element.outerHTML,
+                    fix : fixedcodes
                 });
             }
         } else {
@@ -46,10 +57,18 @@ function Dragging() {
                     if(element.oncontextmenu == null || element.onfocus == null){
                         // console.log("Violation 2.5.7! Dragabble elements should have other non-pointer options")
                         // console.log(element.outerHTML)
+                        var fixedcodes =[];
+                        var str=element.outerHTML.toString();
+                        var index = str.indexOf('>');
+                        var elementarr = [str.slice(0, index), str.slice(index + 1)];
+                        var fix1 = elementarr[0] + " oncontextmenu = some_function " +">"+ elementarr[1]
+                        var fix2 = elementarr[0] + " onfocus = some_function " +">"+ elementarr[1]
+                        fixedcodes.push(fix1,fix2)
                         warnings.push({
                             rule: 'WCAG 2.5.7',
                             warning : 'Dragabble elements should have other non-pointer options',
-                            code : element.outerHTML
+                            code : element.outerHTML,
+                            fix : fixedcodes
                         });
                     }
                 } 

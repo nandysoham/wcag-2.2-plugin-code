@@ -1,4 +1,4 @@
-
+// this will generally have no error while testing in webpages --> so check before the if else condition
 
 // Table of contents for epub
 
@@ -45,14 +45,27 @@ function FixedReferencePoints() {
                     // console.log(arr[c]);
                     
                     
-                    console.log(warnings);
                     if(arr[c].href == ""){
                         // console.log("Violation 2.4.13! reference locaters should be paginated")
+                        var fixedcodes = [];
+                        var str = $(this).prop("outerHTML").toString()
+                        var codearr = str.split("href")
+                        var idx1 = codearr[1].indexOf("\"")
+                        var firstpart = codearr[1].slice(idx1+1)
+                        var idx2 = firstpart.indexOf("\"")
+                        var secondpart = firstpart.slice(idx2+1)
+                        var fix1 = codearr[0] + " href =\" https://some_url.com\" " + secondpart;
+
+
+                        fixedcodes.push(fix1);
                         warnings.push({
                             rule: 'WCAG 2.4.13',
                             warning : 'reference locaters should be paginated',
-                            code : arr[c],
+                            code : str,
+                            fix : fixedcodes
                         })
+                        
+                        
                         
                     }
                 }    

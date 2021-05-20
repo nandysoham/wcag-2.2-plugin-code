@@ -2,7 +2,7 @@
 
 setTimeout(() => {
     var dragging = localStorage.getItem("draggable");
-    console.log(dragging);
+    // console.log(dragging);
 // var focusappmin = localStorage.getItem("")
 // var fixedRef = localStorage.getItem("fixedref");
 // console.log(fixedRef);
